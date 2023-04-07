@@ -1,0 +1,100 @@
+/* ---------- FONTS ----------*/
+
+
+
+
+/* ---------- VARIABLES ----------*/
+
+:root {
+
+
+}
+
+/* ############################ DEBUG ############################ */
+
+
+
+
+/* ---------- RESET ----------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ---------- LAYOUT, DESIGN ----------*/
+
+.herosection {
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 61px;
+    padding-right: 61px;
+    background-color: lightblue;
+}
+
+.score {
+    background-color: blue;
+}
+
+.summary-container {
+    height: 454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: yellow;
+}
+
+.summary-category {
+    background-color: magenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.category-name-container {
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+}
+
+.category-name-container img {
+    display: block;
+}
+
+.category-name {
+    display: inline-block;
+}
+
+.category-score {
+    background-color: lightgreen;
+    height: 1em;
+}
+
+.button {
+    background-color: blue;
+    text-align: center;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    background-color: white;
+}
+
+ 
+
+
+
+
+
+/* ---------- STATES ----------*/
