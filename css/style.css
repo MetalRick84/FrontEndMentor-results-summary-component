@@ -1,12 +1,21 @@
 /* ---------- FONTS ----------*/
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 /* ---------- VARIABLES ----------*/
 
 :root {
+    /* Colors */
+    --herosection-top-color: hsl(252, 100%, 67%);
+    --herosection-bottom-color: hsl(241, 81%, 54%);
 
+    --score-top-color: hsla(256, 72%, 46%, 1);
+    --score-bottom-color: hsla(241, 72%, 46%, 0);
+
+    --font-color: hsl(241, 100%, 89%);
+
+    /* Padding */
+    --herosection-padding-sides: 61px;
 
 }
 
@@ -25,20 +34,66 @@
 
 /* ---------- LAYOUT, DESIGN ----------*/
 
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
 .herosection {
     height: 355px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-left: 61px;
-    padding-right: 61px;
-    background-color: lightblue;
+    padding-left: var(--herosection-padding-sides);
+    padding-right: var(--herosection-padding-sides);
+    /* background-color: lightblue; */
+    background: linear-gradient(to bottom, var(--herosection-top-color), var(--herosection-bottom-color));
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.title {
+    color: var(--font-color);
+    font-size: 1em;
 }
 
 .score {
-    background-color: blue;
+    /* background-color: blue; */
+    background: linear-gradient(to bottom, var(--score-top-color), var(--score-bottom-color));
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.your-score {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.max-score {
+    color: var(--font-color);
+    font-size: 0.8em;
+}
+
+.rank-explanation h2{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    /* margin-bottom: 0.5em; */
+}
+
+.rank-explanation p{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: var(--font-color);
+}
+
 
 .summary-container {
     height: 454px;
