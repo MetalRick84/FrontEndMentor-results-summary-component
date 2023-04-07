@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Your Result | Frontend Mentor | Results summary component</title>
   <style>
     .attribution { 
       font-size: 11px;
@@ -21,28 +22,48 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <main class="herosection">
+    <h1 class="title">Your Result</h1>
+    <section class="score">
+      <p class="your-score">76</p>
+      <p class="max-score">of 100</p>
+    </section>
+    <h2>Great</h2>
+    <p class="rank-explanation">You scored higher than 65% of the people who have taken these tests.</p>
+  </main>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+
   
-  Summary
+  <aside class="summary-container">
+    <h2>Summary</h2>
+    <section class="summary-category">
+      <img src="./assets/images/icon-reaction.svg" alt="icon lightning">
+      <p class="category-name">Reaction</p>
+      <p class="category-score"><span class="category-your-score">80</span> / 100</p>
+    </section>
 
-  Reaction
-  80 / 100
+    <section class="summary-category">
+      <img src="./assets/images/icon-memory.svg" alt="icon brain">
+      <p class="category-name">Memory</p>
+      <p class="category-score"><span class="category-your-score">92</span> / 100</p>
+    </section>
 
-  Memory
-  92 / 100
+    <section class="summary-category">
+      <img src="./assets/images/icon-verbal.svg" alt="icon speech bubble">
+      <p class="category-name">Verbal</p>
+      <p class="category-score"><span class="category-your-score">61</span> / 100</p>
+    </section>
 
-  Verbal
-  61 / 100
+    <section class="summary-category">
+      <img src="./assets/images/icon-visual.svg" alt="icon eye">
+      <p class="category-name">Visual</p>
+      <p class="category-score"><span class="category-your-score">72</span> / 100</p>
+    </section>
 
-  Visual
-  72 / 100
+    <section class="button-continue">Continue</section>
+  </aside>
 
-  Continue
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
