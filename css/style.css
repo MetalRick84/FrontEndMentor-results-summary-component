@@ -12,7 +12,7 @@
     --score-top-color: hsla(256, 72%, 46%, 1);
     --score-bottom-color: hsla(241, 72%, 46%, 0);
 
-    --font-color: hsl(241, 100%, 89%);
+    --font-color: hsl(241, 100%, 83%);
     --reaction-bg-color: hsla(0, 100%, 67%, 0.15);
     --memory-bg-color:  hsla(39, 100%, 56%, 0.15);
     --verbal-bg-color: hsla(166, 100%, 37%, 0.15);
@@ -22,15 +22,7 @@
     --verbal-color: hsla(166, 100%, 37%);
     --visual-color: hsla(234, 85%, 45%);
     --button-color: hsl(224, 30%, 27%);
-
-    /* Padding */
-    --herosection-padding-sides: 61px;
-
 }
-
-/* ############################ DEBUG ############################ */
-
-
 
 
 /* ---------- RESET ----------*/
@@ -54,8 +46,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-left: var(--herosection-padding-sides);
-    padding-right: var(--herosection-padding-sides);
     /* background-color: lightblue; */
     background: linear-gradient(to bottom, var(--herosection-top-color), var(--herosection-bottom-color));
     text-align: center;
@@ -90,6 +80,10 @@ body {
     font-size: 0.8em;
 }
 
+.rank-explanation {
+    padding: 0 61px;
+}
+
 .rank-explanation h2{
     color: white;
     font-size: 1.2em;
@@ -116,6 +110,7 @@ body {
 
 .summary-container h2 {
     font-size: 1em;
+    color: var(--button-color);
 }
 
 .category {
