@@ -6,13 +6,22 @@
 
 :root {
     /* Colors */
-    --herosection-top-color: hsl(252, 100%, 67%);
-    --herosection-bottom-color: hsl(241, 81%, 54%);
+    --herosection-top-color: hsla(252, 100%, 67%);
+    --herosection-bottom-color: hsla(241, 81%, 54%);
 
     --score-top-color: hsla(256, 72%, 46%, 1);
     --score-bottom-color: hsla(241, 72%, 46%, 0);
 
     --font-color: hsl(241, 100%, 89%);
+    --reaction-bg-color: hsla(0, 100%, 67%, 0.15);
+    --memory-bg-color:  hsla(39, 100%, 56%, 0.15);
+    --verbal-bg-color: hsla(166, 100%, 37%, 0.15);
+    --visual-bg-color: hsla(234, 85%, 45%, 0.15);
+    --reaction-color: hsla(0, 100%, 67%);
+    --memory-color:  hsla(39, 100%, 56%);
+    --verbal-color: hsla(166, 100%, 37%);
+    --visual-color: hsla(234, 85%, 45%);
+    --button-color: hsl(224, 30%, 27%);
 
     /* Padding */
     --herosection-padding-sides: 61px;
@@ -102,19 +111,41 @@ body {
     justify-content: space-around;
     padding-left: 31px;
     padding-right: 31px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
-.summary-category {
-    background-color: magenta;
+.summary-container h2 {
+    font-size: 1em;
+}
+
+.category {
+    /* background-color: magenta; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 56px;
+    border-radius: 10px;
+    padding: 0 19px;
+}
+
+.reaction {
+    background-color: var(--reaction-bg-color);
+}
+
+.memory {
+    background-color: var(--memory-bg-color);
+}
+
+.verbal {
+    background-color: var(--verbal-bg-color);
+}
+
+.visual {
+    background-color: var(--visual-bg-color);
 }
 
 .category-name-container {
-    background-color: cyan;
+    /* background-color: cyan; */
     display: flex;
     align-items: center;
 }
@@ -125,25 +156,48 @@ body {
 
 .category-name {
     display: inline-block;
+    margin-left: 15px;
+}
+
+.reaction .category-name {
+    color: var(--reaction-color);
+}
+
+.memory .category-name {
+    color: var(--memory-color);
+}
+
+.verbal .category-name {
+    color: var(--verbal-color);
+}
+
+.visual .category-name {
+    color: var(--visual-color);
 }
 
 .category-score {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     height: 1em;
 }
 
+.category-max-score {
+    color: var(--font-color);
+}
+
 .button {
-    background-color: blue;
+    background-color: var(--button-color);
     text-align: center;
     height: 56px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 28px;
 }
 
 .button-text {
-    background-color: white;
+    color: white;
 }
 
  
