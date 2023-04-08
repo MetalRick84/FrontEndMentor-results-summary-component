@@ -1,6 +1,7 @@
 
 :root {
-    --shadow-main-container-color: hsl(255,71,97);
+    --herosection-top-color: hsla(252, 100%, 67%);
+    --herosection-bottom-color: hsla(241, 81%, 54%);
 }
 
 
@@ -12,7 +13,7 @@
         justify-items: center;
         align-items: center;
         height: 100vh;
-
+        position: relative;
     }
 
     .main-container {
@@ -87,4 +88,17 @@
         margin-bottom: 0;
     }
 
+    .button:hover {
+        background: linear-gradient(to bottom, var(--herosection-top-color), var(--herosection-bottom-color));
+        cursor: pointer;
+    }
+
+
+
+
+
+    footer {
+        position: absolute;
+        bottom: 3px;
+    }
 } 
